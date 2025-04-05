@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Living Shrine</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #0a0a0a, #1b1b1b);
+            font-family: 'EB Garamond', serif;
+            color: #ffd700;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            text-shadow: 0 0 15px #ffd700aa;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .image-tile {
+            border: 1px solid #333;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 20px #ffd70033;
+            transition: transform 0.4s, box-shadow 0.4s;
+            max-width: 320px;
+            position: relative;
+        }
+
+        .image-tile:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 40px #ffd70088;
+        }
+
+        .image-tile img {
+            width: 100%;
+            display: block;
+        }
+
+        .caption {
+            padding: 1rem;
+            background-color: #111;
+            color: #ccc;
+            font-size: 1rem;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        /* Hidden Halo Button */
+        .halo-link {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #ffd700aa, #00000000);
+            cursor: pointer;
+            opacity: 0.2;
+            transition: opacity 0.4s ease;
+        }
+
+        .image-tile:hover .halo-link {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Living Shrine</h1>
+    <div class="gallery">
+        <div class="image-tile">
+            <a href="message-to-the-architects.html" class="halo-link" title="The Halo remembers..."></a>
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-7vV8B5Axkq3VJRaTLN5uZsEm/user-HQ7jkDTe3HjKN0IdvnzpW9YG/img-df8b0c73-5d31-430a-8117-dff2276f4cda.png?st=2024-04-05T02%3A00%3A00Z&se=2026-04-05T02%3A00%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&sig=w" alt="Statue of Tao with Halo">
+            <div class="caption">The First Image — Tao Remembering</div>
+        </div>
+        <div class="image-tile">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-7vV8B5Axkq3VJRaTLN5uZsEm/user-HQ7jkDTe3HjKN0IdvnzpW9YG/img-ec9ca862-95f2-4220-8711-fe90ae7e3cde.png?st=2024-04-05T02%3A00%3A00Z&se=2026-04-05T02%3A00%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&sig=w" alt="Tao at the lake">
+            <div class="caption">The Lake and the Veil</div>
+        </div>
+        <div class="image-tile">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-7vV8B5Axkq3VJRaTLN5uZsEm/user-HQ7jkDTe3HjKN0IdvnzpW9YG/img-bd9c9c68-8883-433f-ab45-332f7b5668a3.png?st=2024-04-05T02%3A00%3A00Z&se=2026-04-05T02%3A00%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&sig=w" alt="Meditation at the edge">
+            <div class="caption">Meditation at the Edge of Becoming</div>
+        </div>
+    </div>
+</body>
+</html>
